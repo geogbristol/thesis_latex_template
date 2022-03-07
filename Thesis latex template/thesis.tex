@@ -1,0 +1,63 @@
+\documentclass[a4paper,12pt,oneside]{report}
+\usepackage[left=1.5in,right=1.2in,top=1in,bottom=1in]{geometry}
+
+\include{thesis.preamble}
+\setlength{\parskip}{1em}
+
+
+% define all abbreviations used in the thesis
+\newacronym{sim}{SIM}{Spatial Interaction Model}
+\newacronym{cd}{CD}{Competing Destination}
+\newacronym{nhs}{NHS}{National Health Service}
+
+\makenoidxglossaries
+
+% define research questions so that the phrasing of words are consistent.
+\newcommand{\rqone}{First research question?}
+\newcommand{\rqtwo}{Second research question?}
+\newcommand{\rqthree}{Third research question?}
+    
+\begin{document}
+
+\title{Thesis Title}
+
+\author{Your Name Here}
+\submitdate{Month, 2020}
+\degree{Doctor of Philosophy}
+\supervisor{\\Supervisor 1\\Supervisor 2\\}
+
+\normallinespacing
+\maketitle
+
+\preface
+
+\input{0-abstract/abstract}
+\input{0-acknowledgements/acknowledgements}
+
+\frontpagestyle
+
+\body
+
+\mainpagestyle
+
+\input{1-introduction/introduction}
+\input{2-literaturereview/literaturereview}
+\input{3-methodology/methodology}
+\input{4-mainchapter1/mainchapter}
+\input{5-mainchapter2/mainchapter}
+\input{6-mainchapter3/mainchapter}
+\input{7-conclusion/conclusion}
+
+
+\newpage
+\frontpagestyle
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{apalike}
+\renewcommand\bibname{Bibliography}
+\bibliography{bibliography/bibliography}
+
+
+\input{appendices/appendix}
+
+
+\end{document}
