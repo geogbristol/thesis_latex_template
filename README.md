@@ -1,5 +1,5 @@
 # thesis_latex_template
-This is an example of latex thesis used by Lenka Hasova, based on University of Nottingham example.
+This is an **unofficial** example of latex thesis used by Lenka Hasova, based on University of Nottingham example.
 
 It also includes the Nothingham example.
 
